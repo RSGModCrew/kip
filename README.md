@@ -1,2 +1,2 @@
-# kip
+# KIP
 Knowledge is Power
