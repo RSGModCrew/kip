@@ -1,0 +1,10 @@
+
+
+#Creative Tabs
+itemGroup.kip=Knowledge Is Power
+
+#Items
+item.kip:KnowledgiumIngot.name=Knowledgium
+
+#Blocks
+tile.letsmodrebootkip:KnowledgiumOre.name=Knowledgium Ore
