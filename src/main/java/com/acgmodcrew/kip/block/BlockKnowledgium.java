@@ -10,6 +10,6 @@ public class BlockKnowledgium extends BlockKip
     public BlockKnowledgium()
     {
         super();
-        this.setBlockName("BlockKnowledgium");
+        this.setBlockName("Knowledgium");
     }
 }

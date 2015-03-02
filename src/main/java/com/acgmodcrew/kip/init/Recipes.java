@@ -15,7 +15,10 @@ public class Recipes
 
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.KnowledgiumIngot), " s ", "sss", " s ", 's', "stickWood"));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.KnowledgiumOre), new ItemStack(ModItems.KnowledgiumIngot), new ItemStack(ModItems.KnowledgiumIngot)));
-        GameRegistry.addSmelting(ModBlocks.KnowledgiumOre), new ItemStack(ModItems.KnowledgiumIngot), 0;
+        GameRegistry.addSmelting(ModBlocks.KnowledgiumOre, new ItemStack(ModItems.KnowledgiumIngot), 0);
+        GameRegistry.addSmelting(ModBlocks.StupidiumOre, new ItemStack(ModItems.StupidiumIngot), -1);
+
+
 
     }
 

@@ -5,6 +5,11 @@ itemGroup.kip=Knowledge Is Power
 
 #Items
 item.kip:KnowledgiumIngot.name=Knowledgium
+item.kip:StupidiumIngot.name=Stupidium
 
 #Blocks
-tile.letsmodrebootkip:KnowledgiumOre.name=Knowledgium Ore
+tile.kip:KnowledgiumOre.name=Knowledgium Ore
+tile.kip:StupidiumOre.name=Stupidium Ore
+
+tile.kip:Stupidium.name=Stupidium Block
+tile.kip:Knowledgium.name=Knowledgium Block
