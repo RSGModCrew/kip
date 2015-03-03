@@ -1,6 +1,7 @@
 package com.acgmodcrew.kip.block;
 
-import com.acgmodcrew.kip.creativetab.CreativeTabKip;
+
+import net.minecraft.world.World;
 
 /**
  * Created by Malec on 01/03/2015.
@@ -12,4 +13,8 @@ public class BlockKnowledgium extends BlockKip
         super();
         this.setBlockName("Knowledgium");
     }
+
+    @Override
+    public float getEnchantPowerBonus(World world, int x, int y, int z)
+    { return 1;}
 }
