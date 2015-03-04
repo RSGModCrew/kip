@@ -4,8 +4,6 @@ import com.acgmodcrew.kip.handler.ConfigurationHandler;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.world.World;
 
-import java.util.Random;
-
 /**
  * Created by Malec on 01/03/2015.
  */
@@ -14,7 +12,7 @@ public class BlockStupidiumOre extends BlockKipOre
     public BlockStupidiumOre()
     {
         super();
-        this.setBlockName("StupidiumOre");
+        this.setBlockName("stupidium_ore");
 
     }
 

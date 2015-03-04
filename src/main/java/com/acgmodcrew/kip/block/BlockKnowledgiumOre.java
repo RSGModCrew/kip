@@ -15,7 +15,7 @@ public class BlockKnowledgiumOre extends BlockKipOre
     public BlockKnowledgiumOre()
     {
         super();
-        this.setBlockName("KnowledgiumOre");
+        this.setBlockName("knowledgium_ore");
 
 
 

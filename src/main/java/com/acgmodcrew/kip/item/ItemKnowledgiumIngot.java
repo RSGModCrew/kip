@@ -16,7 +16,7 @@ public class ItemKnowledgiumIngot extends ItemKip
     public ItemKnowledgiumIngot()
     {
         super();
-        this.setUnlocalizedName("KnowledgiumIngot");
+        this.setUnlocalizedName("knowledgium_ingot");
         this.setCreativeTab(CreativeTabKip.KIP_TAB);
 
     }
