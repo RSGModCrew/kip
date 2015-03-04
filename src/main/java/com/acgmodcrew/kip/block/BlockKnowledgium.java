@@ -11,7 +11,7 @@ public class BlockKnowledgium extends BlockKip
     public BlockKnowledgium()
     {
         super();
-        this.setBlockName("Knowledgium");
+        this.setBlockName("knowledgium_block");
     }
 
     @Override

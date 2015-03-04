@@ -12,12 +12,16 @@ public class Recipes
 {
     public static void init()
     {
+        ItemStack Stupidium = new ItemStack(ModItems.StupidiumIngot);
+        ItemStack Knowledgium = new ItemStack(ModItems.KnowledgiumIngot);
 
         //Blocks <-> Ingots
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Knowledgium), "###", "###", "###", '#', new ItemStack(ModItems.KnowledgiumIngot)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.KnowledgiumIngot), new ItemStack(ModBlocks.Knowledgium)));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Stupidium), "###", "###", "###", '#', new ItemStack(ModItems.StupidiumIngot)));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.StupidiumIngot), new ItemStack(ModBlocks.Stupidium)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Knowledgium), "###", "###", "###", '#', Knowledgium));
+        Knowledgium.stackSize = 9;
+        GameRegistry.addRecipe(new ShapelessOreRecipe(Knowledgium, new ItemStack(ModBlocks.Knowledgium)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Stupidium), "###", "###", "###", '#', Stupidium));
+        Stupidium.stackSize = 9;
+        GameRegistry.addRecipe(new ShapelessOreRecipe(Stupidium, new ItemStack((ModBlocks.Stupidium))));
 
         //Smelting
         GameRegistry.addSmelting(ModBlocks.KnowledgiumOre, new ItemStack(ModItems.KnowledgiumIngot), 1);
