@@ -4,12 +4,31 @@
 itemGroup.kip=Knowledge Is Power
 
 #Items
-item.kip:KnowledgiumIngot.name=Knowledgium
-item.kip:StupidiumIngot.name=Stupidium
+item.kip:knowledgium_ingot.name=Knowledgium
+item.kip:stupidium_ingot.name=Stupidium
+item.kip:grimoire.name=Grimoire
+item.kip:living_skin.name=Living Skin
+item.kip:sum_of_all_knowledge.name=The Sum of All Knowledge
+item.kip:paper_stack.name=Paper Stack
+
+#Tools
+item.kip:knowledgium_pickaxe.name=Knowledgium Pickaxe
+item.kip:knowledgium_axe.name=Knowledgium Axe
+item.kip:knowledgium_hoe.name=Knowledgium Hoe
+item.kip:knowledgium_shovel.name=Knowledgium Shovel
+item.kip:knowledgium_sword.name=Knowledgium Sword
+item.kip:stupidium_pickaxe.name=Stupidium Pickaxe
+item.kip:stupidium_axe.name=Stupidium Axe
+item.kip:stupidium_hoe.name=Stupidium Hoe
+item.kip:stupidium_shovel.name=Stupidium Shovel
+item.kip:stupidium_sword.name=Stupidium Sword
+
 
 #Blocks
-tile.kip:KnowledgiumOre.name=Knowledgium Ore
-tile.kip:StupidiumOre.name=Stupidium Ore
+tile.kip:knowledgium_ore.name=Knowledgium Ore
+tile.kip:stupidium_ore.name=Stupidium Ore
 
-tile.kip:Stupidium.name=Stupidium Block
-tile.kip:Knowledgium.name=Knowledgium Block
+tile.kip:stupidium_block.name=Stupidium Block
+tile.kip:knowledgium_block.name=Knowledgium Block
+
+tile.kip:paper_block.name=Block Of Paper
