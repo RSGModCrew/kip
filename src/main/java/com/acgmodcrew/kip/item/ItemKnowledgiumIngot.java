@@ -1,6 +1,5 @@
 package com.acgmodcrew.kip.item;
 
-import com.acgmodcrew.kip.creativetab.CreativeTabKip;
 import com.acgmodcrew.kip.handler.ConfigurationHandler;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +16,7 @@ public class ItemKnowledgiumIngot extends ItemKip
     {
         super();
         this.setUnlocalizedName("knowledgium_ingot");
-        this.setCreativeTab(CreativeTabKip.KIP_TAB);
+
 
     }
 

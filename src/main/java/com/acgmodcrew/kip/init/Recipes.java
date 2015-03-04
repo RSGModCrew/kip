@@ -1,6 +1,7 @@
 package com.acgmodcrew.kip.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
@@ -14,6 +15,8 @@ public class Recipes
     {
         ItemStack Stupidium = new ItemStack(ModItems.StupidiumIngot);
         ItemStack Knowledgium = new ItemStack(ModItems.KnowledgiumIngot);
+        ItemStack Paper = new ItemStack(Items.paper);
+        ItemStack PaperStack = new ItemStack(ModItems.PaperStack);
 
         //Blocks <-> Ingots
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Knowledgium), "###", "###", "###", '#', Knowledgium));
@@ -22,8 +25,13 @@ public class Recipes
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Stupidium), "###", "###", "###", '#', Stupidium));
         Stupidium.stackSize = 9;
         GameRegistry.addRecipe(new ShapelessOreRecipe(Stupidium, new ItemStack((ModBlocks.Stupidium))));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.PaperStack), "###", "###", "###", '#', "paper"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.PaperBlock), "###", "###", "###", '#', new ItemStack(ModItems.PaperStack)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(PaperStack, "## ", "## ", "   ", '#', Paper));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.PaperBlock), "###", "###", "###", '#', PaperStack));
+        Paper.stackSize = 4;
+        GameRegistry.addRecipe(new ShapelessOreRecipe(Paper, PaperStack));
+        PaperStack.stackSize = 9;
+        GameRegistry.addRecipe(new ShapelessOreRecipe(PaperStack, new ItemStack(ModBlocks.PaperBlock)));
+
 
         //Smelting
         GameRegistry.addSmelting(ModBlocks.KnowledgiumOre, new ItemStack(ModItems.KnowledgiumIngot), 1);
