@@ -1,5 +1,6 @@
 package com.acgmodcrew.kip.item;
 
+import com.acgmodcrew.kip.creativetab.CreativeTabKip;
 import com.acgmodcrew.kip.reference.Reference;
 import net.minecraft.item.ItemAxe;
 
@@ -14,5 +15,6 @@ public class ItemModAxe extends ItemAxe
         super(material);
         this.setUnlocalizedName(unlocalizedName);
         this.setTextureName(Reference.MOD_ID + ":" + unlocalizedName);
+        this.setCreativeTab(CreativeTabKip.KIP_TAB);
     }
 }
