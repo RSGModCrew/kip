@@ -22,6 +22,8 @@ public class Recipes
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Stupidium), "###", "###", "###", '#', Stupidium));
         Stupidium.stackSize = 9;
         GameRegistry.addRecipe(new ShapelessOreRecipe(Stupidium, new ItemStack((ModBlocks.Stupidium))));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.PaperStack), "###", "###", "###", '#', "paper"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.PaperBlock), "###", "###", "###", '#', new ItemStack(ModItems.PaperStack)));
 
         //Smelting
         GameRegistry.addSmelting(ModBlocks.KnowledgiumOre, new ItemStack(ModItems.KnowledgiumIngot), 1);

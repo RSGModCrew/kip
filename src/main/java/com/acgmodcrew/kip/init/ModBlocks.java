@@ -15,14 +15,16 @@ public class ModBlocks
     public final static BlockKip Knowledgium = new BlockKnowledgium();
     public final static BlockKip StupidiumOre = new BlockStupidiumOre();
     public final static BlockKip Stupidium = new BlockStupidium();
+    public final static BlockKip PaperBlock = new BlockPaper();
 
     public static void init()
     {
 
 
-        GameRegistry.registerBlock(StupidiumOre, "StupidiumOre");
-        GameRegistry.registerBlock(Stupidium, "Stupidium");
-        GameRegistry.registerBlock(KnowledgiumOre, "KnowledgiumOre");
-        GameRegistry.registerBlock(Knowledgium, "Knowledgium");
+        GameRegistry.registerBlock(StupidiumOre, "stupidium_ore");
+        GameRegistry.registerBlock(Stupidium, "stupidium");
+        GameRegistry.registerBlock(KnowledgiumOre, "knowledgium_ore");
+        GameRegistry.registerBlock(Knowledgium, "snowledgium");
+        GameRegistry.registerBlock(PaperBlock, "paper_block");
     }
 }
