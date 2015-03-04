@@ -1,0 +1,15 @@
+
+
+#Creative Tabs
+itemGroup.kip=Knowledge Is Power
+
+#Items
+item.kip:knowledgium_ingot.name=Knowledgium
+item.kip:stupidium_ingot.name=Stupidium
+
+#Blocks
+tile.kip:knowledgium_ore.name=Knowledgium Ore
+tile.kip:stupidium_ore.name=Stupidium Ore
+
+tile.kip:stupidium_block.name=Stupidium Block
+tile.kip:knowledgium_block.name=Knowledgium Block
