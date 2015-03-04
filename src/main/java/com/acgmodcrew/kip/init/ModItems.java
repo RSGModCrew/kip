@@ -13,15 +13,15 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems
 {
-    public static final ItemKip KnowledgiumIngot = new ItemKnowledgiumIngot();
-    public static final ItemKip StupidiumIngot = new ItemStupidiumIngot();
-    public static final ItemKip PaperStack = new ItemPaperStack();
+    public static final ItemKip knowledgium_ingot = new ItemKnowledgiumIngot();
+    public static final ItemKip stupidium_ingot = new ItemStupidiumIngot();
+    public static final ItemKip paper_stack = new ItemPaperStack();
 
     public static void init()
     {
-        GameRegistry.registerItem(KnowledgiumIngot, "knowledgium_ingot");
-        GameRegistry.registerItem(StupidiumIngot, "stupidium_ingot");
-        GameRegistry.registerItem(PaperStack, "paper_stack");
+        GameRegistry.registerItem(knowledgium_ingot, "knowledgium_ingot");
+        GameRegistry.registerItem(stupidium_ingot, "stupidium_ingot");
+        GameRegistry.registerItem(paper_stack, "paper_stack");
 
     }
 

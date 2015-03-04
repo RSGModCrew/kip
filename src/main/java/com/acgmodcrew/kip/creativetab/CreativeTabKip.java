@@ -17,7 +17,7 @@ public class CreativeTabKip
         @Override
         public Item getTabIconItem()
         {
-            return ModItems.KnowledgiumIngot;
+            return ModItems.knowledgium_ingot;
         }
 
 

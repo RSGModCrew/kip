@@ -13,46 +13,46 @@ public class Recipes
 {
     public static void init()
     {
-        ItemStack Stupidium = new ItemStack(ModItems.StupidiumIngot);
-        ItemStack Knowledgium = new ItemStack(ModItems.KnowledgiumIngot);
+        ItemStack Stupidium = new ItemStack(ModItems.stupidium_ingot);
+        ItemStack Knowledgium = new ItemStack(ModItems.knowledgium_ingot);
         ItemStack Paper = new ItemStack(Items.paper);
-        ItemStack PaperStack = new ItemStack(ModItems.PaperStack);
+        ItemStack PaperStack = new ItemStack(ModItems.paper_stack);
 
         //Blocks <-> Ingots
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Knowledgium), "###", "###", "###", '#', Knowledgium));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.knowledgium), "###", "###", "###", '#', Knowledgium));
         Knowledgium.stackSize = 9;
-        GameRegistry.addRecipe(new ShapelessOreRecipe(Knowledgium, new ItemStack(ModBlocks.Knowledgium)));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.Stupidium), "###", "###", "###", '#', Stupidium));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(Knowledgium, new ItemStack(ModBlocks.knowledgium)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.stupidium), "###", "###", "###", '#', Stupidium));
         Stupidium.stackSize = 9;
-        GameRegistry.addRecipe(new ShapelessOreRecipe(Stupidium, new ItemStack((ModBlocks.Stupidium))));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(Stupidium, new ItemStack((ModBlocks.stupidium))));
         GameRegistry.addRecipe(new ShapedOreRecipe(PaperStack, "## ", "## ", "   ", '#', Paper));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.PaperBlock), "###", "###", "###", '#', PaperStack));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.paper_block), "###", "###", "###", '#', PaperStack));
         Paper.stackSize = 4;
         GameRegistry.addRecipe(new ShapelessOreRecipe(Paper, PaperStack));
         PaperStack.stackSize = 9;
-        GameRegistry.addRecipe(new ShapelessOreRecipe(PaperStack, new ItemStack(ModBlocks.PaperBlock)));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(PaperStack, new ItemStack(ModBlocks.paper_block)));
 
 
         //Smelting
-        GameRegistry.addSmelting(ModBlocks.KnowledgiumOre, new ItemStack(ModItems.KnowledgiumIngot), 1);
-        GameRegistry.addSmelting(ModBlocks.StupidiumOre, new ItemStack(ModItems.StupidiumIngot), -1);
+        GameRegistry.addSmelting(ModBlocks.knowledgium_ore, new ItemStack(ModItems.knowledgium_ingot), 1);
+        GameRegistry.addSmelting(ModBlocks.stupidium_ore, new ItemStack(ModItems.stupidium_ingot), -1);
 
 
         //Tools
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumPickaxe), "###", " s ", " s ", '#', new ItemStack(ModItems.KnowledgiumIngot), 's', "stickWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumPickaxe), "###", " s ", " s ", '#', new ItemStack(ModItems.StupidiumIngot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumPickaxe), "###", " s ", " s ", '#', new ItemStack(ModItems.knowledgium_ingot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumPickaxe), "###", " s ", " s ", '#', new ItemStack(ModItems.stupidium_ingot), 's', "stickWood"));
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumAxe), " ##", " s#", " s ", '#', new ItemStack(ModItems.KnowledgiumIngot), 's', "stickWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumAxe), " ##", " s#", " s ", '#', new ItemStack(ModItems.StupidiumIngot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumAxe), " ##", " s#", " s ", '#', new ItemStack(ModItems.knowledgium_ingot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumAxe), " ##", " s#", " s ", '#', new ItemStack(ModItems.stupidium_ingot), 's', "stickWood"));
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumHoe), " ##", " s ", " s ", '#', new ItemStack(ModItems.KnowledgiumIngot), 's', "stickWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumHoe), " ##", " s ", " s ", '#', new ItemStack(ModItems.StupidiumIngot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumHoe), " ##", " s ", " s ", '#', new ItemStack(ModItems.knowledgium_ingot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumHoe), " ##", " s ", " s ", '#', new ItemStack(ModItems.stupidium_ingot), 's', "stickWood"));
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumShovel), " # ", " s ", " s ", '#', new ItemStack(ModItems.KnowledgiumIngot), 's', "stickWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumShovel), " # ", " s ", " s ", '#', new ItemStack(ModItems.StupidiumIngot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumShovel), " # ", " s ", " s ", '#', new ItemStack(ModItems.knowledgium_ingot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumShovel), " # ", " s ", " s ", '#', new ItemStack(ModItems.stupidium_ingot), 's', "stickWood"));
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumSword), " # ", " # ", " s ", '#', new ItemStack(ModItems.KnowledgiumIngot), 's', "stickWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumSword), " # ", " # ", " s ", '#', new ItemStack(ModItems.StupidiumIngot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumSword), " # ", " # ", " s ", '#', new ItemStack(ModItems.knowledgium_ingot), 's', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumSword), " # ", " # ", " s ", '#', new ItemStack(ModItems.stupidium_ingot), 's', "stickWood"));
 
     }
 

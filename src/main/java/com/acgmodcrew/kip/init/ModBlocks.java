@@ -11,20 +11,21 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks
 {
-    public final static BlockKip KnowledgiumOre = new BlockKnowledgiumOre();
-    public final static BlockKip Knowledgium = new BlockKnowledgium();
-    public final static BlockKip StupidiumOre = new BlockStupidiumOre();
-    public final static BlockKip Stupidium = new BlockStupidium();
-    public final static BlockKip PaperBlock = new BlockPaper();
+    public final static BlockKip knowledgium_ore = new BlockKnowledgiumOre();
+    public final static BlockKip knowledgium = new BlockKnowledgium();
+    public final static BlockKip stupidium_ore = new BlockStupidiumOre();
+    public final static BlockKip stupidium = new BlockStupidium();
+    public final static BlockKip paper_block = new BlockPaper();
 
     public static void init()
     {
 
 
-        GameRegistry.registerBlock(StupidiumOre, "stupidium_ore");
-        GameRegistry.registerBlock(Stupidium, "stupidium");
-        GameRegistry.registerBlock(KnowledgiumOre, "knowledgium_ore");
-        GameRegistry.registerBlock(Knowledgium, "snowledgium");
-        GameRegistry.registerBlock(PaperBlock, "paper_block");
+        GameRegistry.registerBlock(stupidium_ore, "stupidium_ore");
+        GameRegistry.registerBlock(stupidium, "stupidium");
+        GameRegistry.registerBlock(knowledgium_ore, "knowledgium_ore");
+        GameRegistry.registerBlock(knowledgium, "snowledgium");
+        GameRegistry.registerBlock(paper_block, "paper_block");
+
     }
 }
