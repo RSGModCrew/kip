@@ -13,6 +13,8 @@ import net.minecraft.item.ItemStack;
  */
 public class ItemKip extends Item
 {
+
+
     public ItemKip()
     {
         super();
@@ -44,5 +46,7 @@ public class ItemKip extends Item
     {
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
+
+
 }
 

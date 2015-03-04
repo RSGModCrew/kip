@@ -1,19 +1,20 @@
 package com.acgmodcrew.kip;
 
 
-        import com.acgmodcrew.kip.handler.ConfigurationHandler;
-        import com.acgmodcrew.kip.init.ModBlocks;
-        import com.acgmodcrew.kip.init.ModItems;
-        import com.acgmodcrew.kip.init.Recipes;
-        import com.acgmodcrew.kip.proxy.IProxy;
-        import com.acgmodcrew.kip.reference.Reference;
-        import com.acgmodcrew.kip.utility.LogHelper;
-        import cpw.mods.fml.common.FMLCommonHandler;
-        import cpw.mods.fml.common.Mod;
-        import cpw.mods.fml.common.SidedProxy;
-        import cpw.mods.fml.common.event.FMLInitializationEvent;
-        import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-        import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import com.acgmodcrew.kip.handler.ConfigurationHandler;
+import com.acgmodcrew.kip.init.ModBlocks;
+import com.acgmodcrew.kip.init.ModItems;
+import com.acgmodcrew.kip.init.ModTools;
+import com.acgmodcrew.kip.init.Recipes;
+import com.acgmodcrew.kip.proxy.IProxy;
+import com.acgmodcrew.kip.reference.Reference;
+import com.acgmodcrew.kip.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 /**
  * Created by Malec on 21/02/2015.
@@ -36,6 +37,7 @@ public class kip {
 
         ModItems.init();
         ModBlocks.init();
+        ModTools.init();
         LogHelper.debug("Pre Init Complete");
     }
 
