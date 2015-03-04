@@ -16,7 +16,7 @@ public class ItemStupidiumIngot extends ItemKip
     {
         super();
         this.setCreativeTab(CreativeTabKip.KIP_TAB);
-        this.setUnlocalizedName("StupidiumIngot");
+        this.setUnlocalizedName("stupidium_ingot");
     }
 
     @Override
