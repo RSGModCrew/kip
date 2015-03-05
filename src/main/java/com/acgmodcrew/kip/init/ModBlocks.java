@@ -15,7 +15,7 @@ public class ModBlocks
     public final static BlockKip knowledgium = new BlockKnowledgium();
     public final static BlockKip stupidium_ore = new BlockStupidiumOre();
     public final static BlockKip stupidium = new BlockStupidium();
-    public final static BlockKip paper_block = new BlockPaper();
+    public final static BlockKip paper_block = new BlockPaper("paper_block");
 
     public static void init()
     {
