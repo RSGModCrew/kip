@@ -17,8 +17,6 @@ public class BlockPaper extends BlockKip
     @SideOnly(Side.CLIENT)
     public static IIcon topIcon;
     @SideOnly(Side.CLIENT)
-    public static IIcon bottomIcon;
-    @SideOnly(Side.CLIENT)
     public static IIcon sideIcon;
     public BlockPaper(String unlocalizedname)
     {
@@ -34,7 +32,6 @@ public class BlockPaper extends BlockKip
     public void registerBlockIcons(IIconRegister icon)
     {
         topIcon = icon.registerIcon(this.textureName + "_top");
-
         sideIcon = icon.registerIcon(this.textureName + "_side");
     }
 

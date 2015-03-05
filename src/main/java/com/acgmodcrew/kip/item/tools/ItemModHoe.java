@@ -1,22 +1,24 @@
-package com.acgmodcrew.kip.item;
+package com.acgmodcrew.kip.item.tools;
 
 import com.acgmodcrew.kip.creativetab.CreativeTabKip;
 import com.acgmodcrew.kip.reference.Reference;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
 
 /**
  * Created by Malec on 03/03/2015.
  */
-public class ItemModPickaxe extends ItemPickaxe
+public class ItemModHoe extends ItemHoe
 {
 
-    public ItemModPickaxe(String unlocalizedName, ToolMaterial material)
+    public ItemModHoe(String unlocalizedName, ToolMaterial material)
     {
         super(material);
         this.setUnlocalizedName(unlocalizedName);
         this.setTextureName(Reference.MOD_ID + ":" + unlocalizedName);
         this.setCreativeTab(CreativeTabKip.KIP_TAB);
+
+
     }
 
     @Override

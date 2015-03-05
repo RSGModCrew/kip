@@ -38,7 +38,7 @@ public class Recipes
         GameRegistry.addSmelting(ModBlocks.stupidium_ore, new ItemStack(ModItems.stupidium_ingot), -1);
 
 
-        //Tools
+        //tools
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.knowledgiumPickaxe), "###", " s ", " s ", '#', new ItemStack(ModItems.knowledgium_ingot), 's', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.stupidiumPickaxe), "###", " s ", " s ", '#', new ItemStack(ModItems.stupidium_ingot), 's', "stickWood"));
 

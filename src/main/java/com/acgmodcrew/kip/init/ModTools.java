@@ -1,7 +1,7 @@
 package com.acgmodcrew.kip.init;
 
 
-import com.acgmodcrew.kip.item.*;
+import com.acgmodcrew.kip.item.tools.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
