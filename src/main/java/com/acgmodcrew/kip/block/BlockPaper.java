@@ -31,14 +31,8 @@ public class BlockPaper extends BlockKip
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister icon)
     {
-<<<<<<< HEAD
-        topIcon = icon.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + this.getUnlocalizedName() + "_top");
-        sideIcon = icon.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + this.getUnlocalizedName() + "_side");
-=======
         topIcon = icon.registerIcon(this.textureName + "_top");
-
         sideIcon = icon.registerIcon(this.textureName + "_side");
->>>>>>> origin/master
     }
 
     @Override
