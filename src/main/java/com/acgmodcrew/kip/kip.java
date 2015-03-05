@@ -36,6 +36,7 @@ public class kip {
         ModBlocks.init();
         ModTools.init();
         ModArmour.init();
+        ModTileEntities.init();
         LogHelper.debug("Pre Init Complete");
     }
 

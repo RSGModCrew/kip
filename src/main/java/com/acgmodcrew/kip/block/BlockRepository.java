@@ -10,9 +10,11 @@ import net.minecraft.world.World;
  */
 public class BlockRepository extends BlockKipTile
 {
+
+
     public BlockRepository(Material material)
     {
-        super(Material.wood);
+        super(material);
     }
 
     @Override
