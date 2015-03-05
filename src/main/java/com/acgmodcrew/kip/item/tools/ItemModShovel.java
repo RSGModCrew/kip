@@ -1,4 +1,4 @@
-package com.acgmodcrew.kip.item;
+package com.acgmodcrew.kip.item.tools;
 
 import com.acgmodcrew.kip.creativetab.CreativeTabKip;
 import com.acgmodcrew.kip.reference.Reference;
