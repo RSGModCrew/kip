@@ -24,7 +24,7 @@ public class ModBlocks
         GameRegistry.registerBlock(stupidium_ore, "stupidium_ore");
         GameRegistry.registerBlock(stupidium, "stupidium");
         GameRegistry.registerBlock(knowledgium_ore, "knowledgium_ore");
-        GameRegistry.registerBlock(knowledgium, "snowledgium");
+        GameRegistry.registerBlock(knowledgium, "knowledgium");
         GameRegistry.registerBlock(paper_block, "paper_block");
 
     }
