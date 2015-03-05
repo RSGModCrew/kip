@@ -20,10 +20,11 @@ public class BlockPaper extends BlockKip
     public static IIcon bottomIcon;
     @SideOnly(Side.CLIENT)
     public static IIcon sideIcon;
-    public BlockPaper()
+    public BlockPaper(String unlocalizedname)
     {
         super(Material.grass);
-        this.setBlockName("paper_block");
+        this.setBlockName(unlocalizedname);
+        this.setBlockTextureName(Reference.MOD_ID + ":" + unlocalizedname);
         this.setHarvestLevel("axe", 1);
 
     }
@@ -32,14 +33,14 @@ public class BlockPaper extends BlockKip
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister icon)
     {
-        topIcon = icon.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + this.getUnlocalizedName() + "_top");
+        topIcon = icon.registerIcon(this.textureName + "_top");
 
-        sideIcon = icon.registerIcon(Reference.MOD_ID.toLowerCase() + ":" + this.getUnlocalizedName() + "_side");
+        sideIcon = icon.registerIcon(this.textureName + "_side");
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int metadata)
+    public IIcon getIcon(int side, int meta)
     {
         if (side == 0)
         {
