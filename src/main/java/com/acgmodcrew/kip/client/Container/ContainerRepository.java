@@ -5,6 +5,7 @@ import com.acgmodcrew.kip.tileentity.TileEntityRepositry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 
@@ -25,6 +26,7 @@ public class ContainerRepository extends Container
         this.player = ((InventoryPlayer) playerInv).player;
         this.addSlotToContainer(new Slot(entity, 0, 56, 17));
         this.addSlotToContainer(new GrimSlot(entity, 0, 20, 20));
+
 
         playerInvLayout(playerInv);
 
@@ -52,5 +54,18 @@ public class ContainerRepository extends Container
         {
             this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 142));
         }
+    }
+
+    public void addCraftingToCrafters(ICrafting craft)
+    {
+        super.addCraftingToCrafters(craft);
+        //craft.sendProgressBarUpdate(this, 0, this.enchantLevels[0]);
+        //craft.sendProgressBarUpdate(this, 1, this.enchantLevels[1]);
+        //craft.sendProgressBarUpdate(this, 2, this.enchantLevels[2]);
+    }
+
+    public void detectAndSendChanges()
+    {
+        super.detectAndSendChanges();
     }
 }
