@@ -24,12 +24,13 @@ public class ContainerRepository extends Container
 
         this.repository = entity;
         this.player = ((InventoryPlayer) playerInv).player;
-        this.addSlotToContainer(new Slot(entity, 0, 56, 17));
-        this.addSlotToContainer(new GrimSlot(entity, 0, 20, 20));
+        this.addSlotToContainer(new Slot(entity, 0, 12, 7));
+        this.addSlotToContainer(new GrimSlot(entity, 0, 12, 26));
+        this.addSlotToContainer(new Slot(entity, 0, 12, 63));
+        this.addSlotToContainer(new Slot(entity, 0, 12, 82));
 
 
         playerInvLayout(playerInv);
-
 
     }
 
@@ -46,13 +47,13 @@ public class ContainerRepository extends Container
         {
             for (int j = 0; j < 9; ++j)
             {
-                this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+                this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 12 + j * 18, 102 + i * 18));
             }
         }
 
         for (int i = 0; i < 9; ++i)
         {
-            this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 142));
+            this.addSlotToContainer(new Slot(invPlayer, i, 12 + i * 18, 160));
         }
     }
 

@@ -14,14 +14,16 @@ import org.lwjgl.opengl.GL11;
  */
 public class RepositoryGui extends GuiContainer
 {
-    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/gui/repository.png");
+    //For testing
+    //public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/gui/repository.png");
+    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/gui/placeholder.png");
 
     public RepositoryGui(InventoryPlayer invPlayer, TileEntityRepositry entity)
     {
         super(new ContainerRepository(invPlayer, entity));
 
         xSize = 200;
-        ySize = 150;
+        ySize = 200;
 
 
     }
