@@ -4,6 +4,7 @@ package com.acgmodcrew.kip;
 import com.acgmodcrew.kip.handler.ConfigurationHandler;
 import com.acgmodcrew.kip.init.*;
 import com.acgmodcrew.kip.proxy.IProxy;
+import com.acgmodcrew.kip.proxy.ServerProxy;
 import com.acgmodcrew.kip.reference.Reference;
 import com.acgmodcrew.kip.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -45,6 +46,7 @@ public class kip {
     {
         Recipes.init();
         LogHelper.debug("Init Complete");
+        ServerProxy.regesterNetworkStuff();
     }
 
     @Mod.EventHandler
