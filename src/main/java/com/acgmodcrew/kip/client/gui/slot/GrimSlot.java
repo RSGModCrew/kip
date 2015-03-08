@@ -20,6 +20,6 @@ public class GrimSlot extends Slot
     @Override
     public boolean isItemValid(ItemStack stack)
     {
-        return (stack.equals(new ItemStack(new ItemGrimoire())));
+        return stack.getItem().equals(new ItemGrimoire());
     }
 }

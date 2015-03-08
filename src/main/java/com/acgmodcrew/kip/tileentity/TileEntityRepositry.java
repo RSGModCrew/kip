@@ -10,24 +10,51 @@ import net.minecraft.tileentity.TileEntity;
  */
 public class TileEntityRepositry extends TileEntity implements IInventory
 {
-
+    private ItemStack[] inventory = new ItemStack[4];
 
     @Override
     public int getSizeInventory()
     {
-        return 1;
+        return 4;
     }
 
     @Override
-    public ItemStack getStackInSlot(int p_70301_1_)
+    public ItemStack getStackInSlot(int slot)
     {
-        return null;
+        return inventory[slot];
     }
 
     @Override
-    public ItemStack decrStackSize(int p_70298_1_, int p_70298_2_)
+    public ItemStack decrStackSize(int slot, int p_70298_2_)
     {
-        return null;
+        if (this.inventory[slot] != null)
+        {
+            ItemStack itemstack;
+
+            if (this.inventory[slot].stackSize <= p_70298_2_)
+            {
+                itemstack = this.inventory[slot];
+                this.inventory[slot] = null;
+                this.markDirty();
+                return itemstack;
+            }
+            else
+            {
+                itemstack = this.inventory[slot].splitStack(p_70298_2_);
+
+                if (this.inventory[slot].stackSize == 0)
+                {
+                    this.inventory[slot] = null;
+                }
+
+                this.markDirty();
+                return itemstack;
+            }
+        }
+        else
+        {
+            return null;
+        }
     }
 
     @Override
@@ -37,15 +64,15 @@ public class TileEntityRepositry extends TileEntity implements IInventory
     }
 
     @Override
-    public void setInventorySlotContents(int p_70299_1_, ItemStack p_70299_2_)
+    public void setInventorySlotContents(int slot, ItemStack itemStack)
     {
-
+        inventory[slot] = itemStack;
     }
 
     @Override
     public String getInventoryName()
     {
-        return null;
+        return "Repository";
     }
 
     @Override

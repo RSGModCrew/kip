@@ -25,9 +25,9 @@ public class ContainerRepository extends Container
         this.repository = entity;
         this.player = ((InventoryPlayer) playerInv).player;
         this.addSlotToContainer(new Slot(entity, 0, 12, 7));
-        this.addSlotToContainer(new Slot(entity, 0, 12, 26));
-        this.addSlotToContainer(new Slot(entity, 0, 12, 63));
-        this.addSlotToContainer(new GrimSlot(entity, 0, 12, 82));
+        this.addSlotToContainer(new Slot(entity, 1, 12, 26));
+        this.addSlotToContainer(new Slot(entity, 2, 12, 63));
+        this.addSlotToContainer(new GrimSlot(entity, 3, 12, 82));
 
 
         playerInvLayout(playerInv);
