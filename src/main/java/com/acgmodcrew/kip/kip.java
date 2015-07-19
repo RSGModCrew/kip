@@ -2,11 +2,9 @@ package com.acgmodcrew.kip;
 
 
 import com.acgmodcrew.kip.handler.ConfigurationHandler;
-import com.acgmodcrew.kip.init.ModBlocks;
-import com.acgmodcrew.kip.init.ModItems;
-import com.acgmodcrew.kip.init.ModTools;
-import com.acgmodcrew.kip.init.Recipes;
+import com.acgmodcrew.kip.init.*;
 import com.acgmodcrew.kip.proxy.IProxy;
+import com.acgmodcrew.kip.proxy.ServerProxy;
 import com.acgmodcrew.kip.reference.Reference;
 import com.acgmodcrew.kip.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -38,6 +36,8 @@ public class kip {
         ModItems.init();
         ModBlocks.init();
         ModTools.init();
+        ModArmour.init();
+        ModTileEntities.init();
         LogHelper.debug("Pre Init Complete");
     }
 
@@ -46,6 +46,7 @@ public class kip {
     {
         Recipes.init();
         LogHelper.debug("Init Complete");
+        ServerProxy.regesterNetworkStuff();
     }
 
     @Mod.EventHandler
